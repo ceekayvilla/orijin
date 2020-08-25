@@ -1,0 +1,16 @@
+<script src="{{asset('/resources/js/admin/jquery.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/popper.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/bootstrap.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/jquery.matchHeight.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/main.js')}}"></script>
+<!-- <script src="{{asset('/resources/js/admin/Chart.bundle.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/chartist.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/chartist-plugin-legend.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/jquery.flot.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/jquery.flot.pie.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/jquery.flot.spline.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/jquery.simpleWeather.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/weather-init.js')}}"></script> 
+<script src="{{asset('/resources/js/admin/moment.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/fullcalendar.min.js')}}"></script>
+<script src="{{asset('/resources/js/admin/fullcalendar-init.js')}}"></script> -->
