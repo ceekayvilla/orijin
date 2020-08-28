@@ -9,6 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Orijin - @yield('page_title')</title>
         @include('themes.admin.template-parts.css')
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
 
     <body>

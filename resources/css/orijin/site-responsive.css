@@ -1,0 +1,261 @@
+
+/*================// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width================*/
+
+/*================// Large devices (desktops, less than 1200px)================*/
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1280px) { }
+
+/*================// Medium devices (tablets, less than 1024px)================*/
+@media (max-width:1024px) {
+  .content-sec{
+  background-image:url(../images/flower-bg.png);
+  background-repeat: no-repeat;
+   background-size: contain;
+}
+
+}
+
+/*================// Medium devices (tablets, less than 992px)================*/
+@media (max-width: 991.98px) {
+.navbar-light .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(145,181,47, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar {padding: 0rem 0px;}
+h1.heading-wel{margin-top: 50%;
+    font-size: 38px;
+    margin-bottom: 20px;}
+.navbar-nav.mr-auto{background-color:#0F230D;}
+.navbar-expand-lg .navbar-nav .nav-link{
+padding-top:1.3rem;
+padding-bottom:1.3rem;
+font-size: 16px;
+}
+li.nav-item{border-top: solid 2px rgba(145,181,47,0.2);padding: 20px 15px 20px 15px;}
+li.nav-item:last-child{border-bottom: solid 0px transparent;}
+.navbar-light .navbar-toggler {
+    color:#fff;
+    border-color:#183516; 
+    background-color:#183516;
+}
+.orijin-logo {
+ width: 140px;
+ margin: 0px auto 0 auto;
+}
+.navbar-toggler-icon {
+    width: 1.6em;
+    height: 1.6em;
+}
+.navbar{
+    float: right;
+    z-index: 1024;
+    background-color:#183516!important;
+
+}
+.navbar-toggler {padding: 13px 10px;}
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+    outline: none!important;
+    top: 15px;
+    right: 0px;
+    border-radius:0px;}
+
+  
+}
+
+/*================// Small devices (landscape phones, less than 768px)================*/
+@media (max-width: 767.98px) {
+  .calender-bg{margin-top: 0px;}
+  html .fc, .fc table {
+    font-size: 0.925em;
+}
+.fc .fc-header-space {
+    padding-left: 4px;
+}
+.fc-text-arrow{
+  margin: 0.1em;
+    font-size: 1.4em;}
+  .fc-header td {
+    white-space: nowrap;
+    padding: 30px 2px 0px;
+}
+
+  .fc-button-month.fc-state-default, .fc-button-agendaWeek.fc-state-default, .fc-button-agendaDay.fc-state-default {
+    min-width: 24px;
+}
+  .fc-week .fc-day:hover .fc-day-number {
+
+    height: 30px;
+    width: 30px;
+    color: #FFFFFF;
+    line-height:20px;
+   
+}
+.fc-state-highlight > div > div.fc-day-number {
+
+    height: 30px;
+    width: 30px;
+    color: #FFFFFF;
+    line-height:20px;
+}
+.fc-button {padding: 0 .4em;}
+  .fc-border-separate tr.fc-last th {font-size: 12px;}
+  .fc-header-title h2 {font-size: 13px;
+    padding-left: 0px;
+    line-height: 1px;
+    padding-top: 20px;}
+  .fc-week .fc-day > div .fc-day-number {font-size: 10px;}
+  .fc-event {font-size: 10px;}
+  .nav-item.fun-name {
+    display: block;
+}
+  .nav-none .orijin-logo {margin-top: 0px;}
+  .main-flower-bg .lets-sign h1.heading-wel {
+    margin-top: 30%;
+}
+  .enter .form-row .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+ .enter .form-row .col-md-4 {padding-right: 10px;}
+ .enter .lets-sign .form-control {font-size: 22px;}
+
+.header-top {
+    background-color: #1A6232;
+    position: absolute;
+    left: 0;
+    right: 0px;
+    height: 60px;
+}
+li.nav-item:last-child {
+    border-bottom: solid 0px transparent;
+    padding-bottom: 300px;
+}
+.content-sec {
+   position: relative;
+   top: 60px;
+  }
+
+
+    .main-flower-bg h1.heading-wel {
+    margin-top: 40%;
+}
+    h2.hide{
+  visibility: visible;
+  text-align: center;
+  font-size: 18px!important;
+  position: relative;
+}
+.ih-item.square.effect3.bottom_to_top .info{display: none;}
+.ih-item.square.effect3.bottom_to_top a:hover .img{display: none;}
+.Lifestyle-icons .col-md-3:nth-of-type(1){
+    padding-right:0px;
+}
+.Lifestyle-icons .col-md-3:nth-of-type(3){
+    padding-right:0px;
+}
+.glovo,.drinks,.jumia,.uber,.celebrate,.events,.bottle,.buyonline {
+  min-height: 130px;
+    max-height: 130px;
+    line-height: 130px;
+    margin-bottom: 20px;
+}
+ .Lifestyle-icons .col-md-3 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.Lifestyle-icons img {
+    width: 50%;
+
+}
+.content-sec.terms h2 {margin: 42% auto 0px auto;}
+.social img{margin-right: 8px;}
+.playpause {top: 15%;}
+.video {min-height: 300px;max-height: 300px;}
+.talk{max-width: 140px;margin:20% auto 0px auto;}
+.btn{line-height: normal;}
+.lets-sign .form-group {margin-bottom: 20px;}
+.talk img{width: 100%;margin-top:40%;}
+h1.heading-let {font-size:32px;margin-bottom: 30px;}
+h2.sign-phone {
+    text-align: left;
+    font-size: 22px;
+}
+.nav-item.fun-name .nav-link{display: inline-block;visibility: visible;}
+.nav-item.fun-name a.nav-link:last-child{float: right;}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.content-sec p{
+   width: 90%;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.fans-content p {
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+}
+.btn.btn-primary{margin-bottom: 20px;}
+.btn.btn-secondary {margin-top: 20px;}
+.foter{margin-top:30%;line-height:26px;padding-bottom: 30px;}
+.conditions {line-height: 26px;}
+.foter{font-size:15px;}
+.header-tabs .fans-content {
+    background-color: #8aae2f;
+    min-height: auto;
+    max-height: unset;
+}
+.header-tabs {margin-top: 0px;}
+.nav-tabs {max-width: 200px;margin: 0 auto;}
+.top-sign {display: none;}
+.navbar-expand-lg .navbar-nav .nav-link {padding-top: 0rem;padding-bottom: 0rem;font-size: 15px;}
+.navbar-expand-lg .navbar-nav .nav-link {padding-right: 2rem;padding-left: 0rem;}
+.watermark .form-row .col-md-4 {
+    padding-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.form-check {padding-left: .6rem;}
+.form-check-label {font-size: 16px;}
+.watermark .btn.btn-primary{margin-top: 0px;}
+.social-b i.fa {
+    background-color: #8AAE2F;
+    color: #FFF;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-size: 10px;
+}
+body.main-flower-bg {
+    background-image: url(../images/main-flower-bg.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+/*================// Extra small devices (portrait phones, less than 576px)================*/
+@media (max-width: 575.98px) {}
+
+
+@media (max-width:480px) {}
+
+
+
+
+
+
+
+
