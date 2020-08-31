@@ -38,11 +38,20 @@ Route::post('create/recipe', 'RecipeController@store')->name('create-recipe');
 Route::get('list-recipes', 'RecipeController@list')->name('list-recipes');
 /*Recipes*/
 Auth::routes();
+
 /*pages*/
 Route::get('/', 'PageController@talkToNigeria');
 Route::get('/home', 'PageController@talkToNigeria')->name('home');;
 Route::get('/logout', 'PageController@logout');
 Route::get('talk-to-nigeria', 'PageController@talkToNigeria')->name('talk-to-nigeria');
+Route::get('my-uploads', 'PageController@user_uploads')->name('my-uploads');
+Route::get('fan-uploads', 'PageController@fan_uploads')->name('fan-uploads');
 Route::post('upload-media','PageController@upload')->name('upload-media');
 Route::get('upload-successful','PageController@successfullUpload')->name('upload-successful');
 /*pages*/
+
+
+Route::get('published-videos', 'ModerationController@get_published')->name('published-videos');
+Route::get('unpublished-videos', 'ModerationController@get_unpublished')->name('unpublished-videos');
+Route::get('rejected-videos', 'ModerationController@get_rejected')->name('rejected-videos');
+Route::post('moderate', 'ModerationController@moderation_action')->name('moderate');

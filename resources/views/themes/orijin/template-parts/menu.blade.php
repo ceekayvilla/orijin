@@ -5,13 +5,19 @@
             <span class="hoverlink__label">Talk To Nigeria</span>
         </a>
     </li>
-@if(!auth()->guest())
+    @if(!auth()->guest())
     <li class="nav-item">
-        <a href="fans-uploads.html" class="hoverlink" data-hover-label="My Uploads">
+        <a href="{{route('my-uploads')}}" class="hoverlink" data-hover-label="My Uploads">
             <span class="hoverlink__label">My Uploads</span>
         </a>
     </li>
     @endif
+
+    <li class="nav-item">
+        <a href="{{route('fan-uploads')}}" class="hoverlink" data-hover-label="Fans' Uploads">
+            <span class="hoverlink__label">Fans' Uploads</span>
+        </a>
+    </li>
 
     <li class="nav-item">
         <a href="{{route('our-roots')}}" class="hoverlink" data-hover-label="Our Roots">
@@ -25,11 +31,11 @@
         </a>
     </li>
 
-    <li class="nav-item">
+    <!-- <li class="nav-item">
          <a href="events.html" class="hoverlink" data-hover-label="Events">
             <span class="hoverlink__label">Events</span>
          </a>
-    </li>
+    </li> -->
 
 </ul>
 

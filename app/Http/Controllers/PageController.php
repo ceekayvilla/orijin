@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Media;
 use App\UserMedia;
+use App\VideoView;
 use Auth;
 
 class PageController extends Controller{
@@ -64,6 +65,38 @@ class PageController extends Controller{
         
     }
 
+    public function successfullUpload(){
+        return view('pages.successful-upload');
+    }
+
+    public function logout(){
+        auth()->logout();
+        return redirect('/');
+    }
+
+    public function user_uploads(){
+        $user_id = $this->user_id();
+        if(!is_null($user_id)){
+            $videos = $this->videos();
+            return view('pages.user-uploads')->with(['videos'=>$videos]);
+        }else{
+            return redirect('/');
+        }
+    }
+
+    public function fan_uploads(){
+        $videos = $this->videos();
+        return view('pages.fan-uploads')->with(['videos'=>$videos]);
+    }
+
+    private function videos(){
+        return VideoView::where('status', '1')->get();
+    }
+
+    private function user_id(){
+        return $this->loggedInUser()->id;
+    }
+
     private function addUserMedia($media_id){
         $user_id = $this->loggedInUser()->id;
         UserMedia::create([
@@ -71,10 +104,7 @@ class PageController extends Controller{
             'media_id'=>$media_id
         ]);
     }
-
-    public function successfullUpload(){
-        return view('pages.successful-upload');
-    }
+    
 
     private function loggedInUser(){
         $user = Auth::user();
@@ -82,8 +112,5 @@ class PageController extends Controller{
     }
 
 
-    public function logout(){
-        auth()->logout();
-        return redirect('/');
-    }
+    
 }
