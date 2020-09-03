@@ -1,5 +1,11 @@
-<script src="{{asset('/resources/js/orijin/jquery-3.5.1.slim.min.js')}}"></script>
-<script src="{{asset('/resources/js/orijin/popper.min.js')}}"></script>
-<script src="{{asset('/resources/js/orijin/bootstrap.min.js')}}"></script>
-<script src="{{asset('/resources/js/orijin/aos.js')}}"></script>
-<script src="{{asset('/resources/js/orijin/myscript.js')}}"></script>
+{!!Html::script('/resources/js/orijin/jquery-3.5.1.slim.min.js',array(),true)!!}
+{!!Html::script('/resources/js/orijin/popper.min.js',array(),true)!!}
+{!!Html::script('/resources/js/orijin/bootstrap.min.js',array(),true)!!}
+{!!Html::script('/resources/js/orijin/aos.js',array(),true)!!}
+{!!Html::script('/resources/js/orijin/jarallax.min.js',array(),true)!!}
+{!!Html::script('/resources/js/orijin/jarallax-video.min.js',array(),true)!!}
+{!!Html::script('/resources/js/orijin/myscript.js',array(),true)!!}
+{!!Html::script('//footer.diageohorizon.com/dfs/master.js', array(), true)!!}
+{!!Html::script('/resources/js/orijin/cidb.js',array(),true)!!}
+{!!Html::script('/resources/js/orijin/dev.js',array(),true)!!}
+

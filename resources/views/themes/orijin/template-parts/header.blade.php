@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="orijin-logo">
-                    <a href="index.html">
+                    <a href="{{route('home')}}">
                         <img src="{{ asset('resources/css/images/orijin-logo.png') }}">
                     </a>
                 </div>

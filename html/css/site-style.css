@@ -131,10 +131,12 @@ ul.navbar-nav.mr-auto li:nth-of-type(4) {margin-left: 20px;}*/
 .navbar{
   padding: 7px 0px 0px 0px;
     z-index: 9999;}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color:#91B52F;}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-item:focus, .navbar-light .navbar-nav .item:hover {color:#91B52F;}
+.navbar-light .navbar-nav .active>.nav-item, .navbar-light .navbar-nav .nav-item.active, .navbar-light .navbar-nav .nav-item.show, .navbar-light .navbar-nav .show>.nav-item {
     color: #91B52F;
 }
+
+li.nav-item.active .hoverlink{color: #91B52F;}
 .header-top .mr-auto{
     margin-right: auto!important;
     margin-left: auto!important;
@@ -215,7 +217,7 @@ h2.hide{
 .content-sec p{
   width: 55%;
   margin:0 auto;
-  font-size: 18px;
+  font-size: 17px;
   font-weight:normal;
   font-family:'Raleway-Regular';
   text-align: center;
@@ -251,6 +253,7 @@ h1.heading-wel.select{margin-bottom:30px;}
   border-radius: .4rem;
   transition: 800ms ease all;
   position: relative;
+  font-size: 21px;
 }
 .btn.btn-primary:hover{background-color:#1F5124;    box-shadow: 0 0 0 0.2rem rgba(31,81,36,.5);}
 .btn.btn-secondary{
@@ -317,7 +320,7 @@ h1.heading-wel.select{margin-bottom:30px;}
 /* ====== let's talk ======*/
 .talk{
   text-align: center;
-  margin-top:20%; 
+  margin-top:14%; 
 }
 .talk img{
   width:auto;
@@ -489,18 +492,27 @@ h2.sign-phone::before {
 
   }
 /* ====== footer ======*/
+.text-center p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Raleway-Regular';
+    text-align: center;
+    line-height: 26px;
+}
 footer a{color: #FFF;}
 .foter{
   font-family: 'Raleway-Medium';
   line-height: normal;
   font-size: 14px;
   text-align:center;
-  padding-bottom: 40px;
-  margin-top: 5%;
+  padding-bottom:0px;
+  margin-top:30px;
 }
 .conditions{
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .line{
   border-top:solid 2px rgba(145,181,47,0.2);
@@ -902,6 +914,99 @@ a.fc-event.success{color:#FFF;}
  .top-sign a:last-child{border-right:solid 0px transparent;}
 
  .top-sign{padding-top:13px;}
- .row-form{
-  margin-top: 40px;
+ .row-form{margin-top: 40px;}
+ .button-wrapper{
+  float: right;
+    display: block;
+    max-width: 500px;
+    position: absolute;
+    /* bottom: 0; */
+    /* left: 0; */
+    right: 20px;
+    bottom: -30px;
+ 
+}
+
+.button-wrapper-home{
+  display: block;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.button-wrapper-home .btn.btn-secondary, .button-wrapper-home .btn.btn-primary{
+display:block;
+max-width: 400px;
+width: auto;
+float: left;
+padding:16px 30px;
+margin: 30px 0px 0px 15px;
+line-height: normal;
+}
+
+.button-wrapper .btn.btn-secondary, .button-wrapper .btn.btn-primary{
+  display:block;
+  max-width: auto;
+  width: auto;
+  float: left;
+ margin-top:40px;
+ margin-left: 15px;
+  font-size: 14px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+.button-wrapper-home .btn.btn-secondary a, .button-wrapper-home .btn.btn-primary a{
+  font-size: 16px;
+  text-align: center;
+
+}
+.button-wrapper .btn.btn-secondary a, .button-wrapper .btn.btn-primary a{
+  font-size: 14px;
+
+}
+
+
+/**==========================================**
+        JARALLAX CSS 
+**===========================================
+**/
+
+ .view {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 700px;
+  clear: both;
+
  }
+ .view .col-md-12 {
+  display: table;
+  height: 700px;
+ }
+ .view .col-md-12 .text-center {vertical-align: middle;}
+ .view .full-bg-img {background: rgba(0, 0, 0, 0.52);}
+.text-center h1.heading-wel {
+  max-width: 380px;
+  margin:45% auto 30px auto;
+  font-size:45px;
+}
+
+.social.icons i{
+  font-size: 24px;
+  margin: 30px 10px;
+  height: 40px;
+  width:40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border:solid 1px #fff;
+}
+
+.social.icons i:hover {
+    color: #EBA9B1;
+    background-color: #A61D31;
+    transform: rotate(360deg) scale(1.1,1.1);
+    transition-duration: 1.2s;
+    transition: .2s;
+}
+
+.top-sign a.active{color:#91B52F; }

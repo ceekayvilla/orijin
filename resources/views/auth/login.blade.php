@@ -11,7 +11,7 @@
         <img src="{{ asset('resources/css/images/talk-to-nigeria.png')}}" />
         <h1 class="heading-sign">{{ __('Login') }}</h1>
     </div>
-    <form method="POST" action="{{ route('login') }}">
+    <form method="POST" action="{{ route('login') }}" autocomplete="off">
         @csrf
         <div class="row row-form">
 

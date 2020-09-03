@@ -9,6 +9,7 @@
             <h1 class="heading-wel animated fadeInDown">
                 Fan Uploads
             </h1>
+            <p class="animated fadeInUp">Talk your Orijinal Talk…Upload or Record your video and tell Nigeria how you feel</p>
             @php
                 if(sizeof($videos) == 0):
                     print '<p class="animated fadeInUp">No uploads have been made yet.</p>';
@@ -18,7 +19,13 @@
     </div>
 
     <div class="row fans-sec">
-        @forEach($videos as $video):
+        <div class="col-md-12">
+          <div class="button-wrapper">
+            <button class="btn btn-primary btn-block" type="button"><a href="{{route('talk-to-nigeria')}}">Upload  your Video</a></button>
+           <button class="btn btn-secondary btn-block" type="button"><a href="#">Record your Video</a></button>
+          </div>
+        </div>
+        @forEach($videos as $video)
             <div class="col-md-4" data-aos="fade-up">
                 <div class="title-post">
                     <span class="title-bold"></span>

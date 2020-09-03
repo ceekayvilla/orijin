@@ -1,7 +1,9 @@
-<link href="{{ asset('/resources/css/orijin/bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('/resources/css/orijin/aos.css') }}" rel="stylesheet">
-<link href="{{ asset('/resources/css/orijin/animate.css') }}" rel="stylesheet">
-<link href="{{ asset('/resources/css/orijin/ihover.css') }}" rel="stylesheet">
-<link href="{{ asset('/resources/css/orijin/all.css') }}" rel="stylesheet">
-<link href="{{ asset('/resources/css/orijin/site-style.css') }}" rel="stylesheet">
-<link href="{{ asset('/resources/css/orijin/site-responsive.css') }}" rel="stylesheet">
+{!!Html::style('/resources/css/orijin/bootstrap.min.css',array(),true)!!}
+{!!Html::style('/resources/css/orijin/jquery-ui.min.css',array(),true)!!}
+{!!Html::style('/resources/css/orijin/aos.css',array(),true)!!}
+{!!Html::style('/resources/css/orijin/animate.css',array(),true)!!}
+{!!Html::style('/resources/css/orijin/ihover.css',array(),true)!!}
+{!!Html::style('/resources/css/orijin/all.css',array(),true)!!}
+{!!Html::style('/resources/css/orijin/site-style.css',array(),true)!!}
+{!!Html::style('/resources/css/orijin/site-responsive.css',array(),true)!!}
+{!!Html::style('/resources/css/orijin/dev.css',array(),true)!!}

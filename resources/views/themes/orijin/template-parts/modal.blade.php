@@ -3,7 +3,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><img src="{{secure_asset('themes/orijin/images/icons/close-button.png')}}"></span>
+                    <span aria-hidden="true">
+                        {{ -- <img src="{{secure_asset('resources/css/images/icons/close-button.png')}}"> --}}
+                    </span>
                 </button>
             </div>
             <div class="modal-body">
@@ -11,7 +13,7 @@
             <input class="form-control border-secondary py-2" type="search" value="What are you looking for?">
             <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button">
-                    <img src="{{secure_asset('themes/orijin/images/searchi.jpg')}}">
+                    {{--  <img src="{{secure_asset('resources/css/images/searchi.jpg')}}"> --}}
                 </button>
             </div>
         </div>
@@ -21,3 +23,4 @@
         </div>
     </div>
 </div>
+

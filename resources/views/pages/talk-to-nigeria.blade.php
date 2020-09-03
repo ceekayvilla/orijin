@@ -16,6 +16,13 @@
              <button class="btn btn-primary btn-block" type="button"><a href="{{route('register')}}">Sign Up</a></button>
 
         @else
+        @if (count($errors) > 0)
+             @foreach ($errors->all() as $error)
+                <div class="alert alert-danger" role="alert">
+                    {{ $error }}
+                </div>
+            @endforeach
+        @endif
             {{ Form::open(array('url' => 'upload-media', 'files' => true)) }}
             <div class=" file btn btn-secondary btn-block">
                 Select Video

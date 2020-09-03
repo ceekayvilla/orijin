@@ -14,10 +14,23 @@
    background-size: contain;
 }
 
+li.nav-item {font-size: 14px;}
+.like-icon {margin-left: 0px;}
+.button-wrapper {bottom: -51px;}
+.top-sign {padding-top: 15px;}
+.social-b i.fa {
+    color: #FFF;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    font-size: 10px;
+}
+
 }
 
 /*================// Medium devices (tablets, less than 992px)================*/
 @media (max-width: 991.98px) {
+  
 .navbar-light .navbar-toggler-icon {
      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -62,40 +75,34 @@ li.nav-item:last-child{border-bottom: solid 0px transparent;}
     top: 15px;
     right: 0px;
     border-radius:0px;}
+.header-top {height: 60px;}
+.main-flower-bg .lets-sign h1.heading-wel {margin-top: 23%;}
+.button-wrapper {bottom: -50px;}
 
-  
 }
 
 /*================// Small devices (landscape phones, less than 768px)================*/
 @media (max-width: 767.98px) {
-  .calender-bg{margin-top: 0px;}
-  html .fc, .fc table {
-    font-size: 0.925em;
+  .social-b i.fa {
+    color: #FFF;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 14px;
 }
-.fc .fc-header-space {
-    padding-left: 4px;
-}
-.fc-text-arrow{
-  margin: 0.1em;
-    font-size: 1.4em;}
-  .fc-header td {
-    white-space: nowrap;
-    padding: 30px 2px 0px;
-}
-
-  .fc-button-month.fc-state-default, .fc-button-agendaWeek.fc-state-default, .fc-button-agendaDay.fc-state-default {
-    min-width: 24px;
-}
-  .fc-week .fc-day:hover .fc-day-number {
-
+.calender-bg{margin-top: 0px;}
+html .fc, .fc table {font-size: 0.925em;}
+.fc .fc-header-space {padding-left: 4px;}
+.fc-text-arrow{margin: 0.1em;font-size: 1.4em;}
+.fc-header td {white-space: nowrap;padding: 30px 2px 0px;}
+.fc-button-month.fc-state-default, .fc-button-agendaWeek.fc-state-default, .fc-button-agendaDay.fc-state-default {min-width: 24px;}
+.fc-week .fc-day:hover .fc-day-number {
     height: 30px;
     width: 30px;
     color: #FFFFFF;
     line-height:20px;
-   
 }
 .fc-state-highlight > div > div.fc-day-number {
-
     height: 30px;
     width: 30px;
     color: #FFFFFF;
@@ -109,9 +116,7 @@ li.nav-item:last-child{border-bottom: solid 0px transparent;}
     padding-top: 20px;}
   .fc-week .fc-day > div .fc-day-number {font-size: 10px;}
   .fc-event {font-size: 10px;}
-  .nav-item.fun-name {
-    display: block;
-}
+  .nav-item.fun-name {display: block;}
   .nav-none .orijin-logo {margin-top: 0px;}
   .main-flower-bg .lets-sign h1.heading-wel {
     margin-top: 30%;
@@ -123,7 +128,6 @@ li.nav-item:last-child{border-bottom: solid 0px transparent;}
 }
  .enter .form-row .col-md-4 {padding-right: 10px;}
  .enter .lets-sign .form-control {font-size: 22px;}
-
 .header-top {
     background-color: #1A6232;
     position: absolute;
@@ -138,13 +142,12 @@ li.nav-item:last-child {
 .content-sec {
    position: relative;
    top: 60px;
+   margin-bottom: 60px;
   }
+.row.fans-sec .col-md-4:last-child{margin-bottom: 30px;}
+.main-flower-bg h1.heading-wel {margin-top: 40%;}
 
-
-    .main-flower-bg h1.heading-wel {
-    margin-top: 40%;
-}
-    h2.hide{
+  h2.hide{
   visibility: visible;
   text-align: center;
   font-size: 18px!important;
@@ -152,27 +155,20 @@ li.nav-item:last-child {
 }
 .ih-item.square.effect3.bottom_to_top .info{display: none;}
 .ih-item.square.effect3.bottom_to_top a:hover .img{display: none;}
-.Lifestyle-icons .col-md-3:nth-of-type(1){
-    padding-right:0px;
-}
-.Lifestyle-icons .col-md-3:nth-of-type(3){
-    padding-right:0px;
-}
+.Lifestyle-icons .col-md-3:nth-of-type(1){padding-right:0px;}
+.Lifestyle-icons .col-md-3:nth-of-type(3){padding-right:0px;}
 .glovo,.drinks,.jumia,.uber,.celebrate,.events,.bottle,.buyonline {
   min-height: 130px;
-    max-height: 130px;
-    line-height: 130px;
-    margin-bottom: 20px;
+  max-height: 130px;
+  line-height: 130px;
+  margin-bottom: 20px;
 }
  .Lifestyle-icons .col-md-3 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
 }
-.Lifestyle-icons img {
-    width: 50%;
-
-}
+.Lifestyle-icons img {width: 50%;}
 .content-sec.terms h2 {margin: 42% auto 0px auto;}
 .social img{margin-right: 8px;}
 .playpause {top: 15%;}
@@ -196,8 +192,8 @@ h2.sign-phone {
 }
 .content-sec p{
    width: 90%;
-    font-size: 16px;
-    margin-bottom: 30px;
+   font-size: 16px;
+   margin-bottom: 30px;
 }
 .fans-content p {
     width: 100%;
@@ -208,9 +204,9 @@ h2.sign-phone {
 }
 .btn.btn-primary{margin-bottom: 20px;}
 .btn.btn-secondary {margin-top: 20px;}
-.foter{margin-top:30%;line-height:26px;padding-bottom: 30px;}
-.conditions {line-height: 26px;}
-.foter{font-size:15px;}
+.foter{margin-top:30px;line-height:26px;padding-bottom:20px;font-size:15px;}
+.social.icons i {margin-top: 20px;margin-bottom:0px;}
+.conditions {line-height: 26px;padding-top: 20px;padding-bottom: 20px;}
 .header-tabs .fans-content {
     background-color: #8aae2f;
     min-height: auto;
@@ -244,6 +240,33 @@ body.main-flower-bg {
     background-image: url(../images/main-flower-bg.jpg);
     background-repeat: repeat;
     background-size: contain;
+}
+.button-wrapper-home .btn.btn-secondary, .button-wrapper-home .btn.btn-primary {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    float: left;
+    padding: 16px 30px;
+    margin: 0px 0px 20px 0px;
+}
+.text-center p {margin: 0px auto 30px auto;}
+.row.Lifestyle-icons {margin-top: 0px;}
+.text-center h1.heading-wel {
+    max-width: 380px;
+    margin: 64% auto 30px auto;}
+.view.jarallax{position: unset!important;}
+.view .col-md-12 {
+    display: table;
+    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+}
+.view{height: auto;}
+.text-center h1.heading-wel {margin-top:50%;}
+.text-center h1.heading-wel {font-size: 40px;}
+.button-wrapper-home .btn.btn-secondary a, .button-wrapper-home .btn.btn-primary a {font-size: 15px;}
+.button-wrapper {bottom: -50px;}
+
 }
 
 /*================// Extra small devices (portrait phones, less than 576px)================*/

@@ -20,15 +20,15 @@
     <link href="css/site-style.css" rel="stylesheet">
     <!--- site-responsive css--->
     <link href="css/site-responsive.css" rel="stylesheet">
-    <title>Select a Filter</title>
+    <title>let's Celebrate You</title>
    </head>
-  <body>
+  <body class="main-flower-bg">
    <header class="header-top">
      <div class="container">
       <div class="row">
        <div class="col-md-12">
-        <div class="orijin-logo"><img src="images/orijin-logo.png"></div>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="orijin-logo"><a href="index.html"><img src="images/orijin-logo.png"></a></div>
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,11 +38,14 @@
                <li class="nav-item fun-name">
                 <a class="nav-link" href="#">Moses Owino</a><a class="nav-link" href="index.html">Sign Out</a>
               </li>
-               <li class="nav-item active">
-                <a href="upload-your-video.html" class="hoverlink" data-hover-label="Talk to Nigeria"><span class="hoverlink__label">Talk to Nigeria</span></a>
+              <li class="nav-item">
+                <a href="index.html" class="hoverlink" data-hover-label="Home"><span class="hoverlink__label">Home</span></a>
               </li>
                <li class="nav-item">
-                <a href="upload-your-picture.html" class="hoverlink" data-hover-label="Orijinal Celebration"><span class="hoverlink__label"> Orijinal Celebrations</span></a>
+                <a href="talk-to-nigeria.html" class="hoverlink" data-hover-label="Talk to Nigeria"><span class="hoverlink__label">Talk to Nigeria</span></a>
+              </li>
+               <li class="nav-item active">
+                <a href="orijinal-celebrations.html" class="hoverlink" data-hover-label="Orijinal Celebration"><span class="hoverlink__label"> Orijinal  Celebrations</span></a>
               </li> 
               
               <li class="nav-item">
@@ -74,43 +77,86 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 lets-sign">
-          <h1 class="heading-wel select animated fadeInDown">Upload a Picture</h1>
-           <div class="video">
-             <a href="lets-celebrate-you.html"><div class="playpause"></div></a>
-           </div>
-
-          <!--clarendon form-->
-          <div class="template-form">
-       <div class=" file btn btn-secondary btn-block" type="button">Upload<input type="file" name="file"/></div>
-
-       
-           </div>
-           
-
+          <h1 class="heading-wel animated fadeInDown" >What are WE celebrating?</h1>
+           <P class="animated fadeInUp">Select your celebration from the list and get your Orijinal template!</P>
+           <!--What are WE celebrating? template-->
+            <div class="cele-templates"><a href="picture-uploaded-successful.html"><img src="images/celebratory-templates/microsite birthday.jpg"></a></div>
+             <!--template  form-->
+            <div class="template-form">
+              <form>
+                 <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                     <option>Select Background</option>
+                    <option>Birthday</option>
+                    <option>Boxing day</option>
+                    <option>Christmas</option>
+                    <option>Graduation day</option>
+                    <option>Independence day</option>
+                  </select>
+                </div>
+                <div class="template-form">
+            <div class=" file btn btn-primary btn-block" type="button">Upload<input type="file" name="file"></div>
+              <div class="btn btn-secondary btn-block" type="button">Submit</div>
+          </div>
+              </form>
+            </div>
+          </div>
         </div>
+      
       </div>
-    </div>
-    
   </section>
-  <!--Section Content Area-->
-
-  
- 
-
+<!--Section Content Area-->
 <!-- footer Area-->
 <footer class="foter">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="line conditions">Conditions of Use Privacy and Cookie Notice | UGC Policy | Accessibility  Responsible Drinking DrinkIQ | theBar.com | FAQs | Contact Us</div>
-        <div class="copy">©Orijin 2020 Please do not share with anyone under the legal purchase age for alcohol. Drink Responsible</div>
+        <div class="line conditions">Conditions of Use Privacy and Cookie Notice 
+          | <a href="#">UGC Policy</a> 
+          | <a href="#">Accessibility  Responsible Drinking DrinkIQ</a> 
+          | <a href="#">theBar.com</a> 
+          | <a href="terms-and-conditions.html">Terms & Conditions </a> 
+          | <a href="#">FAQs</a>
+          | <a href="#">Contact Us</a></div>
+          <div class="copy">©Orijin 2020 Please do not share with anyone under the legal purchase age for alcohol. Drink Responsible</div>
+          <div class="social icons">
+            <a href="https://www.facebook.com/orijinNigeria" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/orijin_nigeria" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/OrijinNigeria" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/OrijinNigeria" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</footer>     
+  </footer>     
 
 
     
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="images/icons/close-button.png"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                  <div class="input-group">
+                <input class="form-control border-secondary py-2" type="search" value="What are you looking for?">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <img src="images/searchi.jpg">
+                    </button>
+                </div>
+            </div>
+                 
+                    <p><a href="wine-result.html"> </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

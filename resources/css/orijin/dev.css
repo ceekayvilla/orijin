@@ -1,0 +1,13 @@
+.fans-sec .fans-videos{
+    height:300px;
+}
+.fans-sec .fans-videos video{
+    width: 100%;
+    height: 100%;
+}
+.fans-image{
+    min-height: auto;
+    max-height: auto;
+    height:100%;
+    width: 100%;
+}

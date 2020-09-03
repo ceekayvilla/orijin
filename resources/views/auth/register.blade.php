@@ -11,7 +11,7 @@
             <h1 class="heading-sign">Sign Up</h1>
         </div>
 
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('register') }}" autocomplete="off">
                         @csrf
 
                         <div class="row row-form">
@@ -47,7 +47,7 @@
                             </div>
 
                             <div class="col-md-6 form-group">
-                                <input id="birthday" type="text" class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required autocomplete="off" autofocus placeholder="Birthday">
+                                <input id="birthday" type="text" readonly="readonly" class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required autocomplete="off" autofocus placeholder="Birthday">
 
                                 @error('birthday')
                                     <span class="invalid-feedback" role="alert">

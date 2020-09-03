@@ -40,8 +40,8 @@ Route::get('list-recipes', 'RecipeController@list')->name('list-recipes');
 Auth::routes();
 
 /*pages*/
-Route::get('/', 'PageController@talkToNigeria');
-Route::get('/home', 'PageController@talkToNigeria')->name('home');;
+Route::get('/', 'PageController@home');
+Route::get('/home', 'PageController@home')->name('home');;
 Route::get('/logout', 'PageController@logout');
 Route::get('talk-to-nigeria', 'PageController@talkToNigeria')->name('talk-to-nigeria');
 Route::get('my-uploads', 'PageController@user_uploads')->name('my-uploads');
@@ -55,3 +55,38 @@ Route::get('published-videos', 'ModerationController@get_published')->name('publ
 Route::get('unpublished-videos', 'ModerationController@get_unpublished')->name('unpublished-videos');
 Route::get('rejected-videos', 'ModerationController@get_rejected')->name('rejected-videos');
 Route::post('moderate', 'ModerationController@moderation_action')->name('moderate');
+    
+    
+//Reoptimized class loader:
+Route::get('/optimize', function() {
+           $exitCode = Artisan::call('optimize:clear');
+           return '<h1>Reoptimized class loader</h1>';
+           });
+
+//Route cache:
+Route::get('/route-cache', function() {
+           $exitCode = Artisan::call('route:cache');
+           return '<h1>Routes cached</h1>';
+           });
+
+//Clear Route cache:
+Route::get('/route-clear', function() {
+           $exitCode = Artisan::call('route:clear');
+           return '<h1>Route cache cleared</h1>';
+           });
+
+//Clear View cache:
+Route::get('/view-clear', function() {
+           $exitCode = Artisan::call('view:clear');
+           return '<h1>View cache cleared</h1>';
+           });
+
+//Clear Config cache:
+Route::get('/config-cache', function() {
+           $exitCode = Artisan::call('config:cache');
+           return '<h1>Clear Config cleared</h1>';
+           });
+Route::get('/config-clear', function() {
+    $exitCode = Artisan::call('config:clear');
+    return '<h1>Clear Config cleared</h1>';
+    });

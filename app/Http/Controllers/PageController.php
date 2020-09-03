@@ -11,6 +11,10 @@ use Auth;
 
 class PageController extends Controller{
 
+    public function home(){
+        return view('pages.home');
+    }
+
     public function talkToNigeria(){
         return view('pages.talk-to-nigeria');
     }
@@ -77,7 +81,8 @@ class PageController extends Controller{
     public function user_uploads(){
         $user_id = $this->user_id();
         if(!is_null($user_id)){
-            $videos = $this->videos();
+            //var_dump($user_id); exit;
+            $videos = $this->my_uploads($user_id);
             return view('pages.user-uploads')->with(['videos'=>$videos]);
         }else{
             return redirect('/');
@@ -103,6 +108,10 @@ class PageController extends Controller{
             'user_id'=>$user_id,
             'media_id'=>$media_id
         ]);
+    }
+    
+    private function my_uploads($user_id){
+        return VideoView::where('user_id', $user_id)->get();
     }
     
 

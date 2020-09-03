@@ -1,7 +1,13 @@
 <ul class="navbar-nav mr-auto ">
 
-    <li class="nav-item active">
-        <a href="{{route('home')}}" class="hoverlink" data-hover-label="Talk To Nigeria">
+    <li class="nav-item">
+        <a href="{{route('home')}}" class="hoverlink" data-hover-label="Home">
+            <span class="hoverlink__label">Home</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="{{route('fan-uploads')}}" class="hoverlink" data-hover-label="Talk To Nigeria">
             <span class="hoverlink__label">Talk To Nigeria</span>
         </a>
     </li>
@@ -12,12 +18,6 @@
         </a>
     </li>
     @endif
-
-    <li class="nav-item">
-        <a href="{{route('fan-uploads')}}" class="hoverlink" data-hover-label="Fans' Uploads">
-            <span class="hoverlink__label">Fans' Uploads</span>
-        </a>
-    </li>
 
     <li class="nav-item">
         <a href="{{route('our-roots')}}" class="hoverlink" data-hover-label="Our Roots">
